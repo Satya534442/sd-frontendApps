@@ -1,0 +1,22 @@
+{
+  "name": "sd-frontendApps",
+  "version": "1.0.0",
+  "description": "sd repositories for front end application",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satya534442/sd-frontendApps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satya534442/sd-frontendApps/issues"
+  },
+  "homepage": "https://github.com/Satya534442/sd-frontendApps#readme"
+}
