@@ -85,7 +85,6 @@ gulp.task('concat', ['copy-react', 'copy-react-dom', 'eslint'], function() {
       ],
       compact: false
     }))
-    .pipe(concat('app.js'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('dist'));
 });
