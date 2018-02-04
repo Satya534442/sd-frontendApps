@@ -4,7 +4,7 @@
 var gulp         = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var babel        = require('gulp-babel');
-var browserSyncbrowserSync  = require('browser-sync');
+var browserSync  = require('browser-sync');
 var concat       = require('gulp-concat');
 var eslint       = require('gulp-eslint');
 var filter       = require('gulp-filter');
@@ -71,7 +71,7 @@ gulp.task('copy-js-vendor', function() {
       'assets/js/src/vendor/react.js',
       'assets/js/src/vendor/react-dom.js'
     ])
-    .pipe(gulp.dest('assets/js'));
+    .pipe(gulp.dest('dist'));
 });
 
 // Concatenate jsFiles.vendor and jsFiles.source into one JS file.
@@ -87,7 +87,7 @@ gulp.task('concat', ['copy-react', 'copy-react-dom', 'eslint'], function() {
     }))
     .pipe(concat('app.js'))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('assets/js'));
+    .pipe(gulp.dest('dist'));
 });
 
 // Compile Sass to CSS
