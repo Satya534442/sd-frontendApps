@@ -14,6 +14,7 @@ const entry = require('webpack-glob-entry')
 		path: path.resolve(__dirname, 'dist'),
 	    filename: '[name].js'
 	  },
+	  watch: true,
 	  module: {
 	    rules: [
 	      {
